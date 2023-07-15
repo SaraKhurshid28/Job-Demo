@@ -1,9 +1,10 @@
 import "./App.css";
+import { Dashboard } from "./Components";
 
 function App() {
   return (
     <>
-      <div>Working</div>
+      <Dashboard />
     </>
   );
 }

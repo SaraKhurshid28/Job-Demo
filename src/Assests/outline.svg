@@ -1,0 +1,13 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="IONIcon/G/globe/outline">
+<path id="Vector" d="M11.2502 2.1084C6.20215 2.1084 2.10953 6.20103 2.10953 11.249C2.10953 16.297 6.20215 20.3896 11.2502 20.3896C16.2981 20.3896 20.3908 16.297 20.3908 11.249C20.3908 6.20103 16.2981 2.1084 11.2502 2.1084Z" fill="#ADF22F" stroke="white" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="Vector_2" d="M11.2501 2.1084C8.69815 2.1084 6.29874 6.20103 6.29874 11.249C6.29874 16.297 8.69815 20.3896 11.2501 20.3896C13.802 20.3896 16.2014 16.297 16.2014 11.249C16.2014 6.20103 13.802 2.1084 11.2501 2.1084Z" fill="#ADF22F" stroke="white" stroke-width="0.75" stroke-miterlimit="10"/>
+<g id="Vector_3">
+<path d="M5.15619 5.15552C6.83666 6.34863 8.95218 7.06011 11.2501 7.06011C13.548 7.06011 15.6635 6.34863 17.344 5.15552" fill="#ADF22F"/>
+<path d="M5.15619 5.15552C6.83666 6.34863 8.95218 7.06011 11.2501 7.06011C13.548 7.06011 15.6635 6.34863 17.344 5.15552" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_4" d="M17.344 17.3445C15.6635 16.1514 13.548 15.4399 11.2501 15.4399C8.95218 15.4399 6.83666 16.1514 5.15619 17.3445" stroke="white" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M11.2501 2.1084V20.3896" stroke="white" stroke-width="0.75" stroke-miterlimit="10"/>
+<path id="Vector_6" d="M20.3908 11.249H2.10953" stroke="white" stroke-width="0.75" stroke-miterlimit="10"/>
+</g>
+</svg>

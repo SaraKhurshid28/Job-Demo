@@ -1,0 +1,150 @@
+.sideBarMainContainer{
+    margin-left: 8%;
+    width: 265px;
+    height: 900px;
+    border-radius: 20px;
+    background: #FFf;
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.sideBarLogoDiv{
+    padding: 36px 0px 28px 29px;
+  
+}
+
+.sideBarLogoLine{
+    height: 12px;
+    width: 0px;
+    border: 1px solid black;
+    margin-right: 10.5px;
+    margin-top: 1%;
+}
+
+.sideBarLine{
+    width: 233.25px;
+    height: 0px;
+    color: rgba(224 , 225, 226, 0%);
+}
+
+.sideBarDashIconContainer{
+    width: 210px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    margin: 23px;
+    padding-left: 6%;
+    border-radius: 8px;
+    background: var(--black-amp-white-white, #FFF);
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+}
+
+.sideBarHomeIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #ADF22F;
+    margin-right: 12px;
+}
+
+.sideBarText{
+    color: var(--gray-gray-700, #2D3748);
+font-family: adineue PRO;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 18px */
+}
+
+.sideBarMenuContainer{
+    width: 105px;
+    height: 149px;
+    margin: 39px 0px 0px 29px;
+}
+
+.sideBarMenuItem{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    margin-bottom: 26px;
+}
+
+.sideBarMenuItemText{
+    color: var(--gray-gray-400, #A0AEC0);
+    font-family: adineue PRO;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 19.5px;
+}
+
+.sideBarMenuAccount{
+    color: var(--gray-gray-700, #2D3748);
+    font-family: adineue PRO;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 18px */
+    text-transform: uppercase;
+    margin-bottom: 26px;
+
+}
+
+.sideBarFootConatiner{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideBarNeedHelp{
+    color: var(--gray-gray-700, #2D3748);
+    font-family: adineue PRO;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+}
+
+.sideBarSubText{
+    color: var(--gray-gray-500, #718096);
+    font-family: adineue PRO;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+}
+
+.sideBarButtonContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideBarButton{
+    margin-bottom: 20px;
+    height: 35px !important;
+    padding: 0px 8px !important;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    width: 170px;
+    border-radius: 8px;
+    background: #ADF22F;
+    color: #FFF;
+    text-align: center;
+    font-family: adineue PRO;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%
+}
+
+.sideBarDarkButton{
+    background: var(--gray-gray-700, #2D3748);
+}
