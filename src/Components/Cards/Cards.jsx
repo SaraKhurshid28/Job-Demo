@@ -7,7 +7,7 @@ const Cards = (props) => {
   useEffect(() => {
     let check = props.footerText.includes("+");
     if (check) setIsPositive(true);
-  }, []);
+  }, [props.footerText]);
   return (
     <>
       <Card className="cardStyle">

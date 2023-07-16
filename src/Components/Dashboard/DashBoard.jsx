@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Dashboard.css";
 import { Images } from "../../Assests/Constant";
 import Menubar from "../Menubar";
 import Cards from "../Cards";
 import Sidebar from "../Sidebar";
 import { Button } from "antd";
+import DashboardAreaChat from "./DashboardAreaChat";
+import LineBarChart from "./LineBarChart";
+import DashboardTable from "./DashBoardTable";
+import DashboardProgressTable from "./DashboardProgressTable";
 
 const Dashboard = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(true);
 
   const cardsArray = [
@@ -36,19 +39,6 @@ const Dashboard = () => {
       footerText: "+8.12% Since last month",
     },
   ];
-  const handleWindowResize = () => {
-    if (window.innerWidth > 800) setIsOpen(true);
-    else setIsOpen(false);
-
-    setWindowSize(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
 
   return (
     <div className="dbMainContainer">
@@ -77,6 +67,37 @@ const Dashboard = () => {
               </div>
             );
           })}
+        </div>
+        <div className="dbChartContainer">
+          <div className="dbAreaChat">
+            <p className="dbAreaChatHeading"> Sales overview</p>
+            <p className="dbAreaChatSubHeading">
+              (+5) more <span className="dbAreaChatSubText">in 2021</span>
+            </p>
+            <DashboardAreaChat />
+          </div>
+          <div className="dbLineChart">
+            <p className="dbLineChartHeading"> Performace</p>
+            <p className="dbLineChatSubHeading">Total orders</p>
+            <LineBarChart />
+          </div>
+        </div>
+
+        <div className="dbChartContainer">
+          <div className="dbTableContainer">
+            <div className="dbTableHeadingContainer">
+              <p className="dbTableHeading">Page visits</p>
+              <Button className="dbSeeMoreButton">See More</Button>
+            </div>
+            <DashboardTable />
+          </div>
+          <div className="dbLineChart">
+            <div className="dbTableHeadingContainer">
+              <p className="dbTableHeading">Social traffic</p>
+              <Button className="dbSeeMoreButton">See More</Button>
+            </div>
+            <DashboardProgressTable />
+          </div>
         </div>
       </div>
     </div>

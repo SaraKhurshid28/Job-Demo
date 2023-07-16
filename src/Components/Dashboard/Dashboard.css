@@ -28,7 +28,130 @@
 }
 
 
+
+.dbAreaChat{
+    width: 1052px;
+    height: 491px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--linear-1, linear-gradient(41deg, #313860 0%, #151928 100%));
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+    padding-left: 21px;
+    padding-top: 28px;
+}
+
+.dbAreaChatHeading{
+    color: var(--black-amp-white-white, #FFF);
+    font-family: adineue PRO;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+}
+
+.dbAreaChatSubHeading{
+    color: var(--green-green-400, #48BB78);
+    font-family: adineue PRO;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+}
+
+.dbAreaChatSubText{
+    color: var(--black-amp-white-white, #FFF);
+    font-weight: 400;
+
+}
+
+.dbChartContainer{
+    display: flex;
+    margin-top: 2%;
+
+ }
+
+ .dbLineChart{
+    width: 411px;
+    height: 491px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--black-amp-white-white, #FFF);
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+    margin-left: 2%;
+    padding-top: 23px;
+    padding-left: 23px;
+ }
+
+ .dbLineChartHeading{
+    color: var(--gray-gray-400, #A0AEC0);
+    font-family: adineue PRO;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+ }
+
+ .dbLineChatSubHeading{
+    color: var(--gray-gray-700, #2D3748);
+    font-family: adineue PRO;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+ }
+
+ .dbTableContainer{
+    width: 1050px;
+    height: 367px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(--black-amp-white-white, #FFF);
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid;
+    padding-top: 23px;
+    padding-left: 24px;
+ }
+
+ .dbTableHeadingContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+ 
+ }
+
+ .dbTableHeading{
+    color: var(--gray-gray-700, #2D3748);
+    font-family: adineue PRO;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+ }
+
+ .dbSeeMoreButton{
+    border-radius: 8px;
+    background: #ADF22F;
+    color: #FFF;
+    font-family: adineue PRO;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 10px */
+ }
+
+
+
 @media only screen and (max-width: 800px) {
+
+    .dbTableContainer{
+        width: 350px;
+    }
+    .dbAreaChat{
+        width:80%;
+        height: 300px;
+        margin-left: 4%; 
+    }
 
     .dbSideBarMobContainer{
         display: flex;
@@ -50,15 +173,30 @@
     }
 
     .dbBodyCardConatiner{
-        margin-right: 10%;
+        margin-left: 4%;
+        margin-right: 1%;
     }
+    .dbChartContainer{
+        display: flex;
+        flex-direction: column;
+     }
 
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (min-width: 801px) and (max-width: 1200px) {
+
+    .dbTableContainer{
+        width: 450px;
+    }
+    .dbAreaChat{
+        width:80%;
+        height: 300px;
+        margin-left: 4%;
+  
+    }
 
     .dbBodyConatiner{
-        margin-left: 10%;
+        margin-left: 2.5%;
     }
 
     .dbBodyCardConatinerWrap{
@@ -66,13 +204,34 @@
     }
 
     .dbBodyCardConatiner{
-        margin-right: 10%;
+        margin-right: 1%;
+        margin-left: 3%;
+
+    }
+
+    .dbChartContainer{
+       display: flex;
+       flex-direction: column;
     }
 
   }
 
 
-  @media only screen and (max-width: 1800px) {
+  @media only screen and (min-width: 1201px)  and (max-width: 1800px) {
+
+
+    .dbTableContainer{
+        width: 80%;
+    }
+
+
+    .dbAreaChat{
+        width:80%;
+        height: 300px;
+        margin-left: 4%;
+  
+    }
+
 
     .dbBodyConatiner{
         margin-left: 3%;
@@ -85,5 +244,13 @@
     .dbBodyCardConatiner{
         margin-right: 3%;
     }
+
+    .dbChartContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
 
   }
