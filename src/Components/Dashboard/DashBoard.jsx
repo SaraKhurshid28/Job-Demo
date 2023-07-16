@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Dashboard.css";
 import { Images } from "../../Assests/Constant";
 import Menubar from "../Menubar";
@@ -11,7 +11,6 @@ import DashboardTable from "./DashBoardTable";
 import DashboardProgressTable from "./DashboardProgressTable";
 
 const Dashboard = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(true);
 
   const cardsArray = [
@@ -40,19 +39,6 @@ const Dashboard = () => {
       footerText: "+8.12% Since last month",
     },
   ];
-  const handleWindowResize = () => {
-    if (window.innerWidth > 800) setIsOpen(true);
-    else setIsOpen(false);
-
-    setWindowSize(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowResize);
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
 
   return (
     <div className="dbMainContainer">
